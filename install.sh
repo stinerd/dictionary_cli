@@ -9,8 +9,8 @@ if [ $SHELL = "/usr/bin/zsh" ];then
    echo alias dic='"python $HOME/.rundict/dict.py"' >>  $HOME/.zshrc 
 # Create alias 
 elif [ $SHELL = "/usr/bin/bash" ];then
-   mkdir $HOME/.rundict
-   cp -r dict.py /$HOME/.rundict
-   echo alias dic='"python $HOME/.rundict/dict.py"' >>  $HOME/.bashrc
+   mkdir $HOME/.rundictbash
+   cp -r dict.py /$HOME/.rundictbash
+   echo alias dic='"python $HOME/.rundictbash/dict.py"' >>  $HOME/.bashrc
 fi
 echo "Done install"
