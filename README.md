@@ -7,4 +7,4 @@
 - `git clone https://github.com/stinerd/dictionary_cli.git`
 - `pip install -r requirements.txt`
 - `python dict.py word`
-- You have create alias on the .zshrc or .bashrc
+- You can create alias on the .zshrc or .bashrc
