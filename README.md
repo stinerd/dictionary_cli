@@ -5,8 +5,8 @@
 
 ## run :
 - `git clone https://github.com/stinerd/dictionary_cli.git`
-- `chmod +x install.sh`
 - `pip install -r requirements.txt`
+- `chmod +x install.sh`
 - `./install.sh`
 - `dic word`
 
