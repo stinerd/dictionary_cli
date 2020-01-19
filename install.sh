@@ -2,10 +2,6 @@
 echo "Startin install packages ..."
 sleep 2
 
-
-# install lib python 
-pip install -r requirements.txt  --user
-
 # Create alias 
 if [ $SHELL = "/usr/bin/zsh" ];then
     mkdir $HOME/.rundict
