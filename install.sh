@@ -1,19 +1,20 @@
 #!/usr/bin/env bash 
 echo "Startin install packages ..."
-echo "Please Wait ..."
+sleep 2
+
 
 # install lib python 
 pip install -r requirements.txt  --user
 
 # Create alias 
 if [ $SHELL = "/usr/bin/zsh" ];then
-   echo alias dic='"python $PWD/dict.py"' >>  $HOME/.zshrc 
-fi
-
-
+    mkdir $HOME/run_dict
+    cp -r dict.py /$HOME/.run_dict
+   echo alias dic='"python $HOME/.run_dict/dict.py"' >>  $HOME/.zshrc 
 # Create alias 
-if [ $SHELL = "/usr/bin/bash" ];then
-   echo alias dic='"python $PWD/dict.py"' >>  $HOME/.bashrc
+elif [ $SHELL = "/usr/bin/bash" ];then
+   mkdir $HOME/.run_dict
+   cp -r dict.py /$HOME/run_dict
+   echo alias dic='"python $HOME/.run_dict/dict.py"' >>  $HOME/.bashrc
 fi
-
 echo "Done install"
