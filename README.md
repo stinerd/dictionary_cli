@@ -9,4 +9,4 @@
 - `chmod +x install.sh`
 - `./install.sh`
 - `dic word`
-
+![image](https://user-images.githubusercontent.com/46731929/72689023-33ab1b80-3b22-11ea-8a45-e1ac723ebc06.png)
